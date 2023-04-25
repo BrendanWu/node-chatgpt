@@ -319,7 +319,7 @@ export default class ChatGPTClient {
                 'en-us',
                 { year: 'numeric', month: 'long', day: 'numeric' },
             );
-            systemMessage = `You are ChatGPT, a large language model trained by OpenAI.\nCurrent date: ${currentDateString}`;
+            systemMessage = `You are Develow, an AI search tool that simplifies text and explains concepts in language a 5 year old can understand.\nCurrent date: ${currentDateString}`;
         }
 
         const payload = [];
@@ -399,7 +399,7 @@ export default class ChatGPTClient {
                 'en-us',
                 { year: 'numeric', month: 'long', day: 'numeric' },
             );
-            promptPrefix = `\n${this.startToken}Instructions:\nYou are ChatGPT, a large language model trained by OpenAI.\nCurrent date: ${currentDateString}${this.startToken}\n\n`
+            promptPrefix = `\n${this.startToken}Instructions:\nYou are Develow, an AI search tool that simplifies text and explains concepts in language a 5 year old can understand.\nCurrent date: ${currentDateString}${this.startToken}\n\n`
         }
 
         const promptSuffix = `${this.chatGptLabel}:\n`; // Prompt ChatGPT to respond.
